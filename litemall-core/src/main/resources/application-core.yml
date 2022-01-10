@@ -1,9 +1,9 @@
 litemall:
   # 开发者应该设置成自己的wx相关信息
   wx:
-    app-id: wxa5b486c6b918ecfb
-    app-secret: e04004829d4c383b4db7769d88dfbca1
-    mch-id: 111111
+    app-id: wx49b45cf0c7254777
+    app-secret: 6419be64ceb6e1c4a27d69e5c3eadcb2
+    mch-id: 111111 # https://pay.weixin.qq.com/
     mch-key: xxxxxx
     notify-url: http://www.example.com/wx/order/pay-notify
     # 商户证书文件路径
@@ -14,16 +14,18 @@ litemall:
   notify:
     mail:
       # 邮件通知配置,邮箱一般用于接收业务通知例如收到新的订单，sendto 定义邮件接收者，通常为商城运营人员
+      # POP3/SMTP服务 授权码： iupblvurfodybeja
+      # IMAP/SMTP服务授权码： oxwqvvvgbdjzbfhe
       enable: false
       host: smtp.exmail.qq.com
-      username: ex@ex.com.cn
-      password: XXXXXXXXXXXXX
-      sendfrom: ex@ex.com.cn
-      sendto: ex@qq.com
+      username: 15271834241@163.com
+      password: 834261743cxl
+      sendfrom: 15271834241@163.com
+      sendto: 834261743@qq.com
       port: 465
     # 短消息模版通知配置
     # 短信息用于通知客户，例如发货短信通知，注意配置格式；template-name，template-templateId 请参考 NotifyType 枚举值
-    sms:
+    sms: # 短信自费
       enable: false
       # 如果是腾讯云短信，则设置active的值tencent
       # 如果是阿里云短信，则设置active的值aliyun
@@ -46,7 +48,7 @@ litemall:
         accessKeyId: xxx
         accessKeySecret: xxx
 
-  # 快鸟物流查询配置
+  # 快鸟物流查询配置(自费)
   express:
     enable: false
     appId: "XXXXXXXXX"
